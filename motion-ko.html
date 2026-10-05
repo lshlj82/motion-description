@@ -208,7 +208,7 @@ svg.drag{touch-action:none;cursor:grab}
 <section id="s9"><h2><span class="n">9</span><span data-i18n="h9"></span></h2>
   <div class="prose"><p data-i18n="p9a"></p><p data-i18n="p9b"></p></div>
   <div class="key"><span><b>A</b> · <b>B</b> = <i>AB</i> cos <i>θ</i> = <i>A</i><sub>x</sub><i>B</i><sub>x</sub> + <i>A</i><sub>y</sub><i>B</i><sub>y</sub> + <i>A</i><sub>z</sub><i>B</i><sub>z</sub></span><span>|<b>A</b> × <b>B</b>| = <i>AB</i> sin <i>θ</i></span><span><b>A</b> × <b>B</b> = (<i>A</i><sub>y</sub><i>B</i><sub>z</sub> − <i>A</i><sub>z</sub><i>B</i><sub>y</sub>, <i>A</i><sub>z</sub><i>B</i><sub>x</sub> − <i>A</i><sub>x</sub><i>B</i><sub>z</sub>, <i>A</i><sub>x</sub><i>B</i><sub>y</sub> − <i>A</i><sub>y</sub><i>B</i><sub>x</sub>)</span><span><b>A</b> × <b>B</b> = −<b>B</b> × <b>A</b></span></div>
-  <div class="sim"><div class="viz"><svg id="v9" class="drag" viewBox="0 0 440 320" role="img" aria-label="Dot and cross products of two vectors"></svg><div class="small" data-i18n="drag9"></div></div><div class="controls" id="c9"></div></div>
+  <div class="sim"><div class="viz"><svg id="v9" class="drag" viewBox="0 0 440 340" role="img" aria-label="Three-dimensional view of A, B and A × B"></svg><div class="small" data-i18n="drag9"></div><svg id="v9h" viewBox="0 0 440 170" role="img" aria-label="The right-hand rule"></svg></div><div class="controls" id="c9"></div></div>
 </section>
 
 <section id="s10"><h2><span class="n">10</span><span data-i18n="h10"></span></h2>
@@ -285,7 +285,7 @@ ko:{
  h9:"두 벡터의 곱: 내적과 외적",
  p9a:"두 벡터 사이의 내적(스칼라곱, dot product 또는 inner product)은 스칼라가 됩니다: <b>A</b> · <b>B</b> = <i>AB</i> cos <i>θ</i> = <i>A</i><sub>x</sub><i>B</i><sub>x</sub> + <i>A</i><sub>y</sub><i>B</i><sub>y</sub> + <i>A</i><sub>z</sub><i>B</i><sub>z</sub>, <i>θ</i> = <i>θ</i><sub>B</sub> − <i>θ</i><sub>A</sub>. 성분을 <i>A</i> cos <i>θ</i><sub>A</sub> 등으로 쓰고 삼각함수 공식을 쓰면 두 식이 같음을 알 수 있습니다. π/2 &lt; <i>θ</i> &lt; π이면 <b>A</b> · <b>B</b> &lt; 0일 수도 있습니다! 단위벡터로는 <b>î</b> · <b>î</b> = <b>ĵ</b> · <b>ĵ</b> = <b>k̂</b> · <b>k̂</b> = 1, <b>î</b> · <b>ĵ</b> = <b>ĵ</b> · <b>k̂</b> = <b>k̂</b> · <b>î</b> = 0이고, 교환법칙이 성립합니다.",
  p9b:"두 벡터 사이의 외적(벡터곱, cross product)은 3차원 벡터에서만 정의되며 벡터가 됩니다: <b>A</b> × <b>B</b> = (<i>A</i><sub>y</sub><i>B</i><sub>z</sub> − <i>A</i><sub>z</sub><i>B</i><sub>y</sub>, <i>A</i><sub>z</sub><i>B</i><sub>x</sub> − <i>A</i><sub>x</sub><i>B</i><sub>z</sub>, <i>A</i><sub>x</sub><i>B</i><sub>y</sub> − <i>A</i><sub>y</sub><i>B</i><sub>x</sub>). 기억하는 법: 첫 줄이 <b>î ĵ k̂</b>, 둘째 줄이 <i>A</i><sub>x</sub> <i>A</i><sub>y</sub> <i>A</i><sub>z</sub>, 셋째 줄이 <i>B</i><sub>x</sub> <i>B</i><sub>y</sub> <i>B</i><sub>z</sub>인 행렬식(가운데 항의 − 부호 주의!). 크기는 |<b>A</b> × <b>B</b>| = <i>AB</i> sin <i>θ</i>(두 벡터가 만드는 평행사변형의 넓이)이고, 방향은 오른손 법칙을 따릅니다: 오른손으로 <b>A</b>에서 <b>B</b> 쪽으로 감싸 쥘 때 엄지손가락이 가리키는 방향. 단위벡터로는 <b>î</b> × <b>ĵ</b> = <b>k̂</b>, <b>ĵ</b> × <b>k̂</b> = <b>î</b>, <b>k̂</b> × <b>î</b> = <b>ĵ</b>(반시계 방향으로 돌면 +, 시계 방향이면 −), <b>î</b> × <b>î</b> = 0입니다. 교환법칙은 성립하지 않습니다: <b>A</b> × <b>B</b> = −<b>B</b> × <b>A</b>.",
- drag9:"xy 평면에서 A와 B의 끝을 끌고, z 성분은 조절 막대로 정하세요.",az:"<i>A</i><sub>z</sub>",bz:"<i>B</i><sub>z</sub>",
+ drag9:"그림을 끌면 3차원 화면이 돌아갑니다. 성분은 조절 막대로 정하세요.",ax9:"<i>A</i><sub>x</sub>",ay9:"<i>A</i><sub>y</sub>",az:"<i>A</i><sub>z</sub>",bx9:"<i>B</i><sub>x</sub>",by9:"<i>B</i><sub>y</sub>",bz:"<i>B</i><sub>z</sub>",pIJ:"î × ĵ = k̂",pJK:"ĵ × k̂ = î",pKI:"k̂ × î = ĵ",swap:"A와 B 바꾸기",view0:"시점 초기화",rPerp9:"(<b>A</b> × <b>B</b>) · <b>A</b>, (<b>A</b> × <b>B</b>) · <b>B</b>",handT:"오른손 법칙",handF:"손가락: A에서 B로 감음",handTh:"엄지: A × B 방향",handN:"3차원 그림의 자홍색 호도 A에서 B 쪽으로 감는 방향을 나타냅니다.",
  rTh9:"두 벡터 사이의 각 <i>θ</i>",rD1:"<b>A</b> · <b>B</b> = <i>AB</i> cos <i>θ</i>",rD2:"<i>A</i><sub>x</sub><i>B</i><sub>x</sub> + <i>A</i><sub>y</sub><i>B</i><sub>y</sub> + <i>A</i><sub>z</sub><i>B</i><sub>z</sub>",rX9:"<b>A</b> × <b>B</b>",rXm:"|<b>A</b> × <b>B</b>| = <i>AB</i> sin <i>θ</i>",rDir9:"<b>A</b> × <b>B</b>의 방향 (<i>A</i><sub>z</sub> = <i>B</i><sub>z</sub> = 0일 때)",outP:"튀어나오는 방향 ⊙",inP:"들어가는 방향 ⊗",zero9:"0 (평행)",
  h10:"예: 평형을 이룰 때 벡터의 크기와 각도 조건",
  p10:"힘 탁자에서 원점의 고리에 묶인 세 줄이 도르래를 지나 질량 <i>m</i><sub>1</sub>, <i>m</i><sub>2</sub>, <i>m</i><sub>3</sub>에 매달려 있습니다. 각 줄의 힘은 <b>F</b><sub>1</sub> = <i>m</i><sub>1</sub><i>g</i><b>î</b>, <b>F</b><sub>2</sub> = <i>m</i><sub>2</sub><i>g</i>(<b>î</b> cos <i>θ</i><sub>21</sub> + <b>ĵ</b> sin <i>θ</i><sub>21</sub>) 등입니다. 평형을 이루면 <b>F</b><sub>1</sub> + <b>F</b><sub>2</sub> + <b>F</b><sub>3</sub> = 0입니다. 뉴턴의 제2법칙 Σ<b>F</b> = <i>m</i><b>a</b> = 0이면 가속도 <b>a</b> = 0(안 움직임), 즉 뉴턴의 제1법칙(관성의 법칙)입니다. 예를 들어 세 질량이 모두 같으면 <i>mg</i>는 모두 소거되고, 2 cos <i>θ</i> = 1, sin <i>θ</i> = sin <i>θ</i>(당연히 성립)이므로 <i>θ</i> = π/3 = 60°입니다. 120° 등간격으로 있어야 한다는 당연한 결과!",
@@ -499,21 +499,46 @@ function u8(){const g=$("#v8");g.innerHTML="";const O=[150,250],s=40;const F=axe
   ro.t.textContent=fx(th*180/Math.PI,1)+"° = "+fx(thp*180/Math.PI,1)+"° + "+minus(S.ph8)+"°"}
 
 /* 9. dot and cross */
-const V9={A:[3,1],B:[1.5,2.5]};
-(function(){const c=$("#c9");slider(c,{id:"az9",key:"az",min:-3,max:3,step:0.25,value:0,fmt:v=>minus(v.toFixed(2)),on:u9});slider(c,{id:"bz9",key:"bz",min:-3,max:3,step:0.25,value:0,fmt:v=>minus(v.toFixed(2)),on:u9});
-  S.ro9=readout(c,[["t","rTh9"],["d1","rD1"],["d2","rD2"],["x","rX9"],["xm","rXm"],["dir","rDir9"]]);const O=[200,200],s=40;
-  makeDrag($("#v9"),440,320,p=>{const pa=[O[0]+V9.A[0]*s,O[1]-V9.A[1]*s],pb=[O[0]+V9.B[0]*s,O[1]-V9.B[1]*s];const da=Math.hypot(p[0]-pa[0],p[1]-pa[1]),db=Math.hypot(p[0]-pb[0],p[1]-pb[1]);return Math.min(da,db)<40?(da<db?"A":"B"):null},
-    (k,p)=>{V9[k]=[Math.max(-4.5,Math.min(5.5,snap((p[0]-O[0])/s))),Math.max(-4,Math.min(4.5,snap((O[1]-p[1])/s)))];u9()})})();
-function u9(){const g=$("#v9");g.innerHTML="";const O=[200,200],s=40;const F=axes2(g,O,s,{xr:[-4.5,5.5],yr:[-2.8,4.5]});const A=[...V9.A,S.az9],B=[...V9.B,S.bz9];const pA=F.P(A[0],A[1]),pB=F.P(B[0],B[1]),pS=F.P(A[0]+B[0],A[1]+B[1]);
-  const cr=[A[1]*B[2]-A[2]*B[1],A[2]*B[0]-A[0]*B[2],A[0]*B[1]-A[1]*B[0]];const dot=A[0]*B[0]+A[1]*B[1]+A[2]*B[2];const Am=Math.hypot(...A),Bm=Math.hypot(...B);const th=Math.acos(Math.max(-1,Math.min(1,dot/(Am*Bm||1))));
-  E("polygon",{points:`${O} ${pA} ${pS} ${pB}`,fill:cr[2]>=0?"var(--magenta)":"var(--cyan)",opacity:.15,stroke:"var(--muted)","stroke-dasharray":"3 3"},g);
-  // projection of B onto A (2D) for dot product picture
-  const Ah=[A[0]/Math.hypot(A[0],A[1]),A[1]/Math.hypot(A[0],A[1])];const pr=B[0]*Ah[0]+B[1]*Ah[1];const pP=F.P(Ah[0]*pr,Ah[1]*pr);E("line",{x1:pB[0],y1:pB[1],x2:pP[0],y2:pP[1],stroke:"var(--green)","stroke-dasharray":"3 3"},g);E("line",{x1:O[0],y1:O[1],x2:pP[0],y2:pP[1],stroke:"var(--green)","stroke-width":5,opacity:.5},g);
-  txt(g,(O[0]+pP[0])/2+6,(O[1]+pP[1])/2+16,"B cos θ",{"font-size":11,fill:"var(--green)"});
-  arrow(g,O[0],O[1],pA[0],pA[1],"var(--blue)",3,11);arrow(g,O[0],O[1],pB[0],pB[1],"var(--red)",3,11);txt(g,pA[0]+8,pA[1]+4,"A",{"font-weight":700,fill:"var(--blue)"});txt(g,pB[0]-14,pB[1]-4,"B",{"font-weight":700,fill:"var(--red)"});
-  const sc=S.az9===0&&S.bz9===0;if(sc&&Math.abs(cr[2])>1e-6)(cr[2]>0?dotOut:crossIn)(g,O[0]+(pS[0]-O[0])/2,O[1]+(pS[1]-O[1])/2,10,"var(--magenta)");
-  const ro=S.ro9;ro.t.textContent=fx(th*180/Math.PI,1)+"°";ro.d1.textContent=fx(Am*Bm*Math.cos(th),3);ro.d2.textContent=fx(dot,3);ro.x.textContent="("+fx(cr[0],2)+", "+fx(cr[1],2)+", "+fx(cr[2],2)+")";ro.xm.textContent=fx(Math.hypot(...cr),3)+" = "+fx(Am*Bm*Math.sin(th),3);
-  ro.dir.textContent=!sc?"—":Math.abs(cr[2])<1e-6?t("zero9"):t(cr[2]>0?"outP":"inP")}
+const V9={az:-38,el:22,s:34,ox:215,oy:190};
+(function(){const c=$("#c9");const sl=(id,key,v)=>slider(c,{id,key,min:-3,max:3,step:0.25,value:v,fmt:x=>minus(x.toFixed(2)),on:u9});
+  S.el9={ax:sl("ax9","ax9",3),ay:sl("ay9","ay9",0.5),az:sl("az9","az",0),bx:sl("bx9","bx9",1),by:sl("by9","by9",2.5),bz:sl("bz9","bz",0)};
+  const r=H("div",{class:"btnrow"},c);const set=(A,B)=>{["ax","ay","az"].forEach((k,i)=>S.el9[k].value=A[i]);["bx","by","bz"].forEach((k,i)=>S.el9[k].value=B[i]);["ax9","ay9","az9","bx9","by9","bz9"].forEach(id=>$("#"+id).dispatchEvent(new Event("input")))};
+  button(r,"pIJ",()=>set([2,0,0],[0,2,0]));button(r,"pJK",()=>set([0,2,0],[0,0,2]));button(r,"pKI",()=>set([0,0,2],[2,0,0]));button(r,"swap",()=>set([S.bx9,S.by9,S.bz9],[S.ax9,S.ay9,S.az9]));button(r,"view0",()=>{V9.az=-38;V9.el=22;u9()});
+  S.ro9=readout(c,[["t","rTh9"],["d1","rD1"],["d2","rD2"],["x","rX9"],["xm","rXm"],["pp","rPerp9"]]);
+  let last=null;makeDrag($("#v9"),440,340,p=>{last=p;return 0},(k,p)=>{V9.az+=(p[0]-last[0])*0.6;V9.el=Math.max(-10,Math.min(85,V9.el+(p[1]-last[1])*0.4));last=p;u9()});drawHand()})();
+function proj9(v){const az=deg(V9.az),el=deg(V9.el);const[x,y,z]=v;const sx=-x*Math.sin(az)+y*Math.cos(az);const fwd=x*Math.cos(az)+y*Math.sin(az);return{X:V9.ox+sx*V9.s,Y:V9.oy-(z*Math.cos(el)-fwd*Math.sin(el))*V9.s,d:fwd*Math.cos(el)+z*Math.sin(el)}}
+function arrow3(g,v0,v1,col,w,lab){const p=proj9(v0),q=proj9(v1);if(Math.hypot(q.X-p.X,q.Y-p.Y)<3){E("circle",{cx:q.X,cy:q.Y,r:4,fill:col},g)}else arrow(g,p.X,p.Y,q.X,q.Y,col,w,11);if(lab)txt(g,q.X+7,q.Y-6,lab,{"font-weight":700,fill:col,"font-size":14,stroke:"var(--panel)","stroke-width":4,"paint-order":"stroke"})}
+function u9(){const g=$("#v9");g.innerHTML="";const A=[S.ax9,S.ay9,S.az9],B=[S.bx9,S.by9,S.bz9];
+  const C=[A[1]*B[2]-A[2]*B[1],A[2]*B[0]-A[0]*B[2],A[0]*B[1]-A[1]*B[0]];const dot=A[0]*B[0]+A[1]*B[1]+A[2]*B[2];const Am=Math.hypot(...A),Bm=Math.hypot(...B),Cm=Math.hypot(...C);const th=Math.acos(Math.max(-1,Math.min(1,dot/(Am*Bm||1))));{V9.s=1;V9.ox=0;V9.oy=0;const pts=[[0,0,0],A,B,C,[A[0]+B[0],A[1]+B[1],A[2]+B[2]],[4.6,0,0],[0,4.6,0],[0,0,4.2],[-4,-4,0],[4,4,0],[-4,4,0],[4,-4,0]].map(proj9);const xs=pts.map(p=>p.X),ys=pts.map(p=>p.Y);const x0=Math.min(...xs),x1=Math.max(...xs),y0=Math.min(...ys),y1=Math.max(...ys);V9.s=Math.min(48,380/(x1-x0||1),290/(y1-y0||1));V9.ox=220-(x0+x1)/2*V9.s;V9.oy=172-(y0+y1)/2*V9.s}
+  const P=v=>{const p=proj9(v);return p.X.toFixed(1)+","+p.Y.toFixed(1)};
+  for(let i=-4;i<=4;i++){E("line",{x1:proj9([i,-4,0]).X,y1:proj9([i,-4,0]).Y,x2:proj9([i,4,0]).X,y2:proj9([i,4,0]).Y,class:"gridl"},g);E("line",{x1:proj9([-4,i,0]).X,y1:proj9([-4,i,0]).Y,x2:proj9([4,i,0]).X,y2:proj9([4,i,0]).Y,class:"gridl"},g)}
+  [[[4.6,0,0],"x"],[[0,4.6,0],"y"],[[0,0,4.2],"z"]].forEach(([v,n])=>{const o=proj9([0,0,0]),q=proj9(v);arrow(g,o.X,o.Y,q.X,q.Y,"var(--muted)",1.4,7);txt(g,q.X+5,q.Y+4,n,{"font-style":"italic",fill:"var(--muted)"})});
+  // parallelogram spanned by A and B
+  E("polygon",{points:`${P([0,0,0])} ${P(A)} ${P([A[0]+B[0],A[1]+B[1],A[2]+B[2]])} ${P(B)}`,fill:"var(--magenta)",opacity:.14,stroke:"var(--magenta)","stroke-opacity":.4,"stroke-dasharray":"3 3"},g);
+  // curl arc from A toward B, in the A-B plane
+  if(Am>1e-6&&Bm>1e-6&&Cm>1e-6){const ah=A.map(x=>x/Am);const bp=B.map((x,i)=>x-dot/(Am*Am)*A[i]);const bpm=Math.hypot(...bp);const bh=bp.map(x=>x/bpm);const R=Math.min(1.1,0.45*Math.min(Am,Bm));
+    let d="";const N=30;for(let k=0;k<=N;k++){const a=th*0.85*k/N;const v=ah.map((x,i)=>R*(Math.cos(a)*x+Math.sin(a)*bh[i]));const p=proj9(v);d+=(k?"L":"M")+p.X.toFixed(1)+","+p.Y.toFixed(1)}
+    E("path",{d,fill:"none",stroke:"var(--magenta)","stroke-width":2.2},g);const a1=th*0.85,a0=th*0.75;const v1=ah.map((x,i)=>R*(Math.cos(a1)*x+Math.sin(a1)*bh[i])),v0=ah.map((x,i)=>R*(Math.cos(a0)*x+Math.sin(a0)*bh[i]));const p1=proj9(v1),p0=proj9(v0);arrow(g,p0.X,p0.Y,p1.X,p1.Y,"var(--magenta)",2.2,8)}
+  // dashed drop lines to the xy plane help read the 3D positions
+  [A,B,C].forEach(v=>{if(Math.abs(v[2])>0.05){const q=proj9(v),f=proj9([v[0],v[1],0]);E("line",{x1:q.X,y1:q.Y,x2:f.X,y2:f.Y,stroke:"var(--muted)","stroke-dasharray":"2 3"},g)}});
+  const items=[[A,"var(--blue)","A",3],[B,"var(--red)","B",3],[C,"var(--green)","A × B",3.5]].map(it=>[...it,proj9(it[0].map(x=>x/2)).d]).sort((a,b)=>a[4]-b[4]);
+  items.forEach(([v,col,lab,w])=>arrow3(g,[0,0,0],v,col,w,lab));
+  if(Cm<1e-6)txt(g,20,24,lang==="ko"?"A × B = 0 (평행)":"A × B = 0 (parallel)",{"font-weight":700,fill:"var(--green)"});
+  const ro=S.ro9;ro.t.textContent=fx(th*180/Math.PI,1)+"°";ro.d1.textContent=fx(Am*Bm*Math.cos(th),3);ro.d2.textContent=fx(dot,3);ro.x.textContent="("+fx(C[0],2)+", "+fx(C[1],2)+", "+fx(C[2],2)+")";ro.xm.textContent=fx(Cm,3)+" = "+fx(Am*Bm*Math.sin(th),3);
+  ro.pp.textContent=fx(C[0]*A[0]+C[1]*A[1]+C[2]*A[2],3)+", "+fx(C[0]*B[0]+C[1]*B[1]+C[2]*B[2],3)}
+function drawHand(){const g=$("#v9h");g.innerHTML="";const skin="#f1c6a3",ink="#5b3a29";const h=E("g",{transform:"translate(40,8)"},g);
+  // thumb (pointing up)
+  E("path",{d:"M78,78 C74,58 74,34 80,18 C84,8 98,8 100,20 C103,36 100,58 100,80 Z",fill:skin,stroke:ink,"stroke-width":2},h);E("path",{d:"M82,26 C86,22 94,22 97,27",fill:"none",stroke:ink,"stroke-width":1.2,opacity:.6},h);
+  // palm and back of the hand
+  E("path",{d:"M30,74 C30,64 40,60 52,60 L104,62 C116,63 122,72 122,86 L122,128 C122,146 108,156 90,156 L56,156 C40,156 30,146 30,132 Z",fill:skin,stroke:ink,"stroke-width":2},h);
+  // four curled fingers seen from the front
+  for(let k=0;k<4;k++){const y=74+k*20;E("rect",{x:18,y,width:76,height:19,rx:9.5,fill:skin,stroke:ink,"stroke-width":2},h);E("path",{d:`M40,${y+4} C36,${y+8} 36,${y+12} 40,${y+15}`,fill:"none",stroke:ink,"stroke-width":1,opacity:.5},h)}
+  // curl arrow around the fingers
+  E("path",{d:"M8,150 C-6,120 -4,86 14,66",fill:"none",stroke:"var(--magenta)","stroke-width":3},h);arrow(h,10,72,16,63,"var(--magenta)",3,10);
+  // thumb direction arrow
+  arrow(h,140,130,140,8,"var(--green)",3.5,12);txt(h,148,30,"A × B",{"font-weight":700,fill:"var(--green)"});
+  const tx=262;txt(g,tx,40,t("handT"),{"font-weight":700,"font-size":15});txt(g,tx,66,"• "+t("handF"),{"font-size":12,fill:"var(--magenta)"});txt(g,tx,88,"• "+t("handTh"),{"font-size":12,fill:"var(--green)"});
+  const words=t("handN").split(" ");let line="",y=116;const lines=[];words.forEach(w=>{if((line+" "+w).length>(lang==="ko"?16:27)){lines.push(line);line=w}else line=line?line+" "+w:w});lines.push(line);lines.forEach((l,i)=>txt(g,tx,116+i*16,l,{"font-size":12,fill:"var(--muted)"}))}
 
 /* 10. force table */
 (function(){const c=$("#c10");slider(c,{id:"m1",key:"m1",min:50,max:500,step:10,value:200,fmt:v=>v+" g",on:u10});slider(c,{id:"m2",key:"m2",min:50,max:500,step:10,value:200,fmt:v=>v+" g",on:u10});slider(c,{id:"m3",key:"m3",min:50,max:500,step:10,value:200,fmt:v=>v+" g",on:u10});

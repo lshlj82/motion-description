@@ -55,7 +55,7 @@ The fourteen sections follow the order of the lecture notes. Every value is reco
 ## Notes on the model
 
 - The drawings are schematic, not to scale. The numbers in the readouts are computed exactly from the formulas.
-- The pages follow the system's light or dark setting.
+- The pages follow the system's light or dark setting, and a sun/moon button in the top-right corner switches by hand, and the choice is remembered across pages.
 - With `prefers-reduced-motion`, the oscillation and circular-motion animations start paused, and the header animation stays still.
 
 ## Credits
